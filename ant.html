@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Smile</title>
+<style type="text/css">
+    .photo{
+        background-image: url("http://ife.baidu.com/2016/static/img/erik_ce204002.jpg"); 
+        width: 480px;
+        height: 480px;
+       
+    }
+</style>
+</head>
+<body>
+    <div class="photo"></div>
+
+    <script>
+//  var y = parseInt(img.style.backgroundPositionY);
+//        var img = document.querySelector(".photo");
+        window.onload = function(){
+        var img = document.getElementsByClassName("photo");
+        var y = 480;
+        
+        function gif(){
+            img.style.backgroundPositionY =   y + 'px';
+            if(y<8160){
+                y = 480;
+            }else{
+                y -= 480
+            }
+        }
+        setInterval(gif, 70);
+        }
+        
+    </script>
+</body>
+</html>

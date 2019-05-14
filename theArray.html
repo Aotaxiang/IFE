@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>theArray</title>
+    </head>
+
+    <body>
+        
+        <input id="queue-input" type="text">
+        <p id="queue-cont">队列内容：apple-&gt;pear</p>    
+        <button id="in-btn">入队</button>
+        <button id="out-btn">出队</button>
+        <button id="font-btn">打印队头元素内容</button>
+        <button id="empty-btn">判断队列是否为空</button>
+
+        <script>
+
+            //按照按钮实现功能
+            var queue = ["apple", "pear"];
+            var btn = document.getElementById("in-btn");
+            var btn1 = document.getElementById("out-btn");
+            var btn2 = document.getElementById("font-btn");
+            var btn3 = document.getElementById("empty-btn");
+            var result = document.getElementById("queue-cont");
+            var input = document.getElementById("queue-input");
+            //var p = document.querySelector("#queue-cont");
+
+            
+                
+            window.onload = function(){
+                
+                btn.onclick = function(){
+                    queue.push(input.value);
+                    //queue.unshift(input.value);
+                    //result.innerHTML = "队列内容：" + queue.join("-&gt");
+                    result.innerHTML = "队列内容 " + queue.join("<-");
+                //result.innerHTML = result.unshift(input.value);
+                }
+                
+                btn1.onclick = function(){
+                    queue.pop(input.value);
+                    result.innerHTML = "队列内容：" + queue.join("-&gt");
+                    
+                }
+
+                btn2.onclick = function(){
+                    //p.innerHTML = "队列内容:"+ queue[0];//队尾元素..
+                    result.innerHTML = "队列内容：" + queue[queue.length-1];
+                    //alert(queue[0]);
+                }
+
+                btn3.onclick = function(){
+                    if (queue.length > 0){
+                        alert("!!!!not empty  !");
+                    }else{
+                        alert("empty");
+                    }
+                }
+            }
+            
+            /*
+            代替window.onload 
+            function print() {
+                p.innerHTML = "栈内容：" + stack.join("-&gt");
+            }
+            push.onclick = function() {
+            stack.unshift(input.value);
+                print();
+            }
+            */
+
+            //数组的排序
+            var arr = [43, 54, 4, -4, 84, 100, 58, 27, 140];
+            arr.sort(function(a,b){
+                return a-b;
+            });
+            console.log(arr);
+            
+            arr.sort(function(a,b){
+                return b-a;
+            })
+            console.log(arr);
+
+            var arr1 = ['apple', 'dog', 'cat', 'car', 'zoo', 'orange', 'airplane'];
+            arr1.sort();
+            console.log(arr1);
+
+            //按每组第二个数据排列 从大到小
+            var arr2 = [[10, 14], [16, 60], [7, 44], [26, 35], [22, 63]];
+            
+            /*同下 第二种方法要点开数组列表
+            [1]的意思是第二个数据
+            arr2.sort(function(a,b){
+                        
+                return b[1]-a[1];
+                
+            })
+            console.log(JSON.stringify(arr2));
+            */
+            console.log(arr2.sort((a,b)=>b[1]-a[1]));
+
+            //按value的大小排序
+            var arr3 = [
+                {
+                    id: 1,
+                    name: 'candy',
+                    value: 40
+                }, {
+                    id: 2,
+                    name: 'Simon',
+                    value: 50
+                }, {
+                    id: 3,
+                    name: 'Tony',
+                    value: 45
+                }, {
+                    id: 4,
+                    name: 'Annie',
+                    value: 60
+                }
+            ];
+
+            
+            var bigValue = arr3.sort(function(a,b){
+                return b.value-a.value;
+            })
+            console.log(bigValue);
+                
+            //对象转换数组
+            var scoreObject = {
+                "Tony": {
+                    "Math": 95,
+                    "English": 79,
+                    "Music": 68
+                }, 
+                "Simon": {
+                    "Math": 100,
+                    "English": 95,
+                    "Music": 98
+                }, 
+                "Annie": {
+                    "Math": 54,
+                    "English": 65,
+                    "Music": 88
+                }
+            }
+            
+            /*
+            var myArray = scoreObject.split(':');
+            console.log(myArray);
+            */
+            /*正解
+            var arr4 = [];
+            for (var i in scoreObject){
+                arr4.push(scoreObject[i])
+            }
+            console.log(arr4);
+            */
+
+            var arr5 = Object.getOwnPropertyNames(scoreObject);
+            var arr6 = Object.keys(scoreObject);
+            var valArr = arr5.map(function(i){return scoreObject[i]});
+            var valArr2 = arr5.map(function(i){return scoreObject[i]});
+            var valArr3 = Object.keys(scoreObject).map(function(i){return scoreObject[i]});
+            
+            console.log(valArr3);
+        </script>
+
+        
+    </body>
+
+</html>
