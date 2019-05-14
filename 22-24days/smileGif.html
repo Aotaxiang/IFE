@@ -17,12 +17,14 @@
 <body>
 <div id="erik"></div>
 <script>
-//        //      var y = parseInt(img.style.backgroundPositionY);
-//      var img = document.querySelector(".erik");
+        /*方法一
+        var y = parseInt(img.style.backgroundPositionY);
+        var img = document.querySelector(".erik");
         
         window.onload=function(){
         var img = document.getElementById("erik");
         var y = 480;
+        
         
         function gif() {
             img.style.backgroundPositionY = '-' + y + 'px';
@@ -49,26 +51,26 @@
         }
         setInterval(gif, 70);
         }
-
-//window.onload = function(){
-    //var erik=document.getElementById("erik");
-    /*
-    function myFunction(){
-    var img = document.querySelector(".div");
-    var Y = 480;
-    function gif() {
-        erik.style.backgroundPositionY = '-' + Y + 'px';
-        if(Y>8160){
-            Y = 480;
-        }else{
-            Y += 480
-        }
-        
-    }
-        setInterval(gif, 70);
-    }
-    myFunction()*/
-    
+        */
+        window.onload = function(){
+            var erik=document.getElementById("erik");
+            
+            function myFunction(){
+            var img = document.querySelector(".div");
+            var Y = 480;
+            function gif() {
+                erik.style.backgroundPositionY = '-' + Y + 'px';
+                if(Y>8160){
+                    Y = 480;
+                }else{
+                    Y += 480
+                }
+                
+            }
+                setInterval(gif, 70);
+            }
+            myFunction()
+                }
 </script>   
 </body>
 </html>
