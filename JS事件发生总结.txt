@@ -1,0 +1,183 @@
+按钮的写法 ：
+
+1：数值计算 （缺点：0+0=00）
+document.getElementById('add-btn').onclick = function(){
+var result = document.getElementById('ID1').value + document.getElementById('ID2').value;
+document.getElementById('result').innerHTML = result;｝
+
+2：parseFloat 小数也可以计算 
+document.getElementById('add-btn').onclick = function(){
+var result = parseFloat(document.getElementById('ID1').value) + parseFloat(document.getElementById('ID2').value);
+document.getElementById('result').innerHTML = "运算结果：" + result;}
+
+3：
+myButton.onclick = function() {
+  alert('hello');
+  // I can put as much code
+  // inside here as I want
+}
+
+4：
+var btn = document.querySelector('button');//定义变量
+
+btn.onclick = function() {
+  var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+  document.body.style.backgroundColor = rndCol;
+}
+补充：
+
+2018、10、16
+
+btn.onclick =function() 
+{
+displayMessage('Woo,this is a different message!','chat');};
+function() 
+{
+displayMessage('Woo,this is a different message!','chat');
+};
+
+var closeBtn
+这个叫声明变量，或者叫定义变量
+var closeBtn = document.createElement('button'); 这个叫声明变量并赋值
+closeBtn.textContent = 'x';    //这个叫赋值
+
+function displayMessage(msgText,msgType) {}   //这个叫声明函数，函数体里面就是具体实现什么名字
+
+
+人是类 我是对象 对象有属性
+var xxx 声明变量 （age name 都是变量）
+并赋值：var person1 = new person（'age','name'） 
+var cat = new Cat  - cat是对象
+person1.cat  - cat是Person这个类的属性
+ this 代码 创建了一个隐藏的对象，我假设他叫 obj 吧
+ 
+你在该函数内对 this 的操作，都被指向 obj
+数组是这个类型的一个属性 也是类
+
+2018.11.29
+
+python 服务器 
+cmd命令：：：
+1,D:
+2,python -m http.server
+
+
+2019.3.10
+
+条件（三元）运算符
+条件 ? 值1 : 值2
+如果条件为真，则结果取值1。否则为值2。你能够在任何允许使用标准运算符的地方使用条件运算符。
+
+var age;
+var status = (age>=18)?"adult":"minor";
+
+2019.3.20 
+
+function函数
+function addSomeNumber(num) { return num + 200; } 等价于
+var addSomeNumber = function (num){ return num + 100; }; 
+
+2019.4.7
+
+function函数
+document.getElementById("company").onclick = function () {
+  var obj = document.getElementById("school-select");
+  var obj1 = document.getElementById("company-select");
+  obj.style.display = "none" ;
+  obj1.style.display = "block" ;
+  }
+此段代码为直接执行
+ps ：onclick 改成onchange也可
+
+关于按扭现实console的文本
+<body>
+<input id="name" type="text">    
+<button id="sub-mitbtn">Submit</button>
+<body>
+
+var btn = document.getElementById("sub-mitbtn");
+var fullname = document.getElementById("name");
+function showWor(){
+ console.log(fullname.value);
+}    
+btn.onclick = showWor;
+
+事件处理（委托） [0]是指第一个子元素
+window.onload = function(){
+  var oUl = document.getElementsByClassName("palette")[0];
+  var p = document.getElementsByClassName("color-picker")[0];
+  oUl.onclick = function(ev){
+  var ev = ev || window.event;
+  var target = ev.target || ev.srcElement;
+   if(target.nodeName.toLowerCase() == 'li'){
+   var some = target.style.backgroundColor;
+    p.innerHTML = some;
+    p.style.color = some;
+｝｝
+多个按钮 触发效果不同
+方法一：
+window.onload = function(){
+   var Add = document.getElementById("add");
+   var Remove = document.getElementById("remove");
+   var Move = document.getElementById("move");
+   var Select = document.getElementById("select");
+            
+   Add.onclick = function(){
+        alert('添加');
+  };
+  Remove.onclick = function(){
+        alert('删除');
+  };
+  Move.onclick = function(){
+        alert('移动');
+  };
+  Select.onclick = function(){
+        alert('选择');
+  }
+  }
+方法二：事件委托优化
+window.onload = function(){
+   var oBox = document.getElementById("box");
+   oBox.onclick = function (ev) {
+       var ev = ev || window.event;
+       var target = ev.target || ev.srcElement;
+       if(target.nodeName.toLocaleLowerCase() == 'input'){
+         switch(target.id){
+              case 'add' :
+                   alert('添加');
+                   break;
+              case 'remove' :
+                   alert('删除');
+                   break;
+               case 'move' :
+                   alert('移动');
+                   break;
+               case 'select' :
+                   alert('选择');
+                   break;
+          }
+       }
+    }
+ }
+
+
+2019.4.15 
+
+事件触发的几种方法
+ window.onload = function(){
+//function myFunction(){
+   var img = document.getElementById("photo");
+// var img = document.querySelector("");
+   var y = 480;
+   function gif(){
+      img.style.backgroundPositionY = '-' + y + 'px';
+      if(y>8160){
+          y = 480;
+       }else{
+          y += 480
+         }
+      }
+    setInterval(gif, 70);
+ }
+//myFunction()
+
