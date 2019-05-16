@@ -167,6 +167,31 @@
             var valArr3 = Object.keys(scoreObject).map(function(i){return scoreObject[i]});
             
             console.log(valArr3);
+
+            var arr7 = [] ;
+            for(let i in scoreObject){
+                var arr8 = [];
+                arr8.push(i);
+                for (let j in scoreObject[i]){
+                    arr8.push(scoreObject[i][j]);
+                }
+                arr7.push(arr8);
+            }
+            console.log(arr7);
+
+
+            var menuArr = [
+                [1, "Area1", -1],
+                [2, "Area2", -1],
+                [3, "Area1-1", 1],
+                [4, "Area1-2", 1],
+                [5, "Area2-1", 2],
+                [6, "Area2-2", 2],
+                [7, "Area1-2-3", 4],
+                [8, "Area2-2-1", 6],
+            ];
+
+            
         </script>
 
         
