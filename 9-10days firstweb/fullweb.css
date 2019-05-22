@@ -1,0 +1,655 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.clearfix:after{
+  content: "";
+  height: 0;
+  display: block;
+  clear: both;
+}
+
+header{
+  width: 100%;
+	height: 998px;
+	display: flex;
+	flex-direction: column;
+}
+
+header .div1{
+  position: absolute;
+  width: 100%;
+  background: url("layer_1.png");
+  color: #ffffff;
+  min-width: 1170px;
+  height: 998px;
+}
+
+header .div1 .div1tm{
+  background-color: rgb(20, 20, 20,0.651);
+  height: 998px;
+  width: 100%;
+}
+
+header .div1 h1 {
+  font-size: 62px;
+  padding-top: 200px;
+  text-align: center;
+  color: #ffffff;
+}
+
+header .div1 p{
+  font-size: 18px;
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+header .div1 .div1_1 {
+  border:1px solid rgb(255, 255, 255,0.2);
+  border-radius: 4px;
+  position: absolute;
+  left: 190px;
+  top: 420px;
+  width: 968px;
+  height: 300px;
+}
+
+header .div1 .div1_1 h2{
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  margin: 55px 0 20px 0;
+  text-align: center;
+}
+
+header .div1 .div1_1 h3{
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+header .div1 .div1_1 input{
+  border-width: 1px;
+  border-color: rgb(255, 255, 255,0.2);
+  border-style: solid;
+  border-radius: 4px;
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  width: 290px;
+  height: 48px;
+  background-color: transparent;
+  color: white;
+}
+
+header .div1 .div1_1 input:nth-of-type(2){
+  left: 410px;
+  color: grey;
+}
+
+header .div1 .div1_1 button{
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-radius: 6px;
+  position: absolute;
+  left: 750px;
+  top: 200px;
+  width: 80px;
+  height: 48px;
+}
+
+section .ready{
+  margin-top: 85px;
+  width: 100%;
+  height: 702px;
+}
+
+section .ready .first p{
+  text-align: center;
+  font-size: 1.5em;
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+section .ready .second p{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 2.5em;
+  margin: 0 auto;
+}
+
+section .div2{
+  width: 400px;
+  left: 300px;
+  text-align: left;
+}
+
+section .div2 .div2_1 {
+  position: absolute;
+  left: 292px;
+  top: 1307px;
+}
+
+section .div2 p{
+  font-size: 16px;
+  font-family: "Myriad Pro";
+  color: rgba(20, 20, 20, 0.702);
+  position: absolute;
+  width: 327px;
+  left: 349.881px;
+  top: 1340px;
+  text-align: left;
+}
+
+section .div2 h4 {
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: rgb(20, 20, 20);
+  line-height: 1.6;
+  position: absolute;
+  left: 349.881px;
+  top: 1300px;
+}
+
+section .div3 .div3_1{
+  position: absolute;
+  left: 886px;
+  top: 1300px;
+}
+
+section .div3 p{
+  font-size: 16px;
+  font-family: "Myriad Pro";
+  color: rgba(20, 20, 20, 0.702);
+  position: absolute;
+  left: 950.937px;
+  top: 1340px;
+  width: 327px;
+  text-align: left;
+}
+
+section .div3 h4{
+  font-size: 20px;
+  font-family: "Montserrat";
+  position: absolute;
+  left: 950.937px;
+  top: 1300px;
+}
+
+section .div4 .div4_1{
+  left: 276px;
+  top: 1472px;
+  position: absolute;
+}
+
+section .div4  h4{
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: rgb(20, 20, 20);
+  position: absolute;
+  left: 349.811px;
+  top: 1470px;
+}
+
+section .div4 p{
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: rgba(20, 20, 20, 0.702);
+  position: absolute;
+  left: 349.811px;
+  top: 1510px;
+  width: 327px;
+  text-align: left;
+}
+
+section .div5 .div5_1{
+  position: absolute;
+  left: 886px;
+  top:1472px;
+}
+
+section .div5  h4{
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: rgb(20, 20, 20);
+  position: absolute;
+  left: 950.937px;
+  top: 1470px;
+}
+
+section .div5 p{
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: rgba(20, 20, 20, 0.702);
+  position: absolute;
+  left: 950.937px;
+  top: 1510px;
+  width: 327px;
+  text-align: left;
+}
+
+section .goo .div6{
+  position: absolute;
+  width: 100%;
+  background: url(layer_2.png);
+  top: 1700px;
+  height: 800px;
+}
+
+section .goo .div6 .div6_1{
+  background-color: rgb(20, 20, 20,0.651);
+  height: 800px;
+  width: 100%;
+}
+
+@font-face{
+  font-family: 'Montserrat';
+  src: url("MontserratAlternates-Thin.otf");
+}
+
+section .goo h4{
+  font-size: 42px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  line-height: 1.238;
+  text-align: left;
+  position: absolute;
+  left: 200px;
+  top: 1928.783px; 
+  width: 367px;
+  height: 137px;
+}
+
+section .goo p{
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgba(255, 255, 255, 0.702);
+  text-align: left;
+  position: absolute;
+  left: 200px;
+  top: 2100px;
+  width: 368px;
+}
+
+section .goo button{
+  font-size: 6px;
+  border-width: 1px;
+  border-color: grey;
+  background-color: #ffffff;
+  border-style: solid;
+  border-radius: 3px;
+  position: absolute;
+  left: 200px;
+  top: 2300px;
+  width: 200px;
+  height: 48px;
+}
+
+section .goo button:nth-of-type(1){
+  background-color: transparent;
+  left: 450px;
+  color: #ffffff;
+}
+
+section .div7 {
+  position: absolute;
+  top: 1800px;
+  left: 700px;
+  border: 1px solid #929393;
+  padding: 10px;
+  margin-top: 100px;
+  border-radius: 10px;
+  width: 590px;
+  
+}
+
+section .div7 .div7_1{
+  background-color: #ffffff;
+  padding: 55px 10px 350px 10px;
+}
+
+section .div7 h1{
+  text-align: center;
+  font-size: 32px;
+}
+
+section .div7 h2{
+  color: #929393;
+  font-family: 'Microsoft JhengHei';
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+}
+
+section .div7 ul{
+  margin-top: left;
+}
+
+section .div7 li{
+  float: left;
+  width: 175px;
+  margin-left: 10px;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+section .div7 .div7_2 h6{
+  padding: 20px;
+  font-family: 'Microsoft JhengHei';
+  font-size: 20px;
+}
+
+section .div7 .div7_2 p{
+  color: #929393;
+  padding: 0 20px 20px 20px;
+  font-size: 15px;
+  font-family: 'Microsoft JhengHei';
+}
+
+section .div8{
+  position: absolute;
+  width: 100%;
+  top: 2500px;
+  height: 550px;
+  border-bottom: 1px solid #929393;
+}
+
+section .div8 .div8_1 p{
+  font-family: 'Montserrat';
+  text-align: center;
+  font-size: 3em;
+  width: 800px;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+section .div8 ul{
+  margin-top: left;
+}
+
+section .div8 li{
+  text-align: center;
+  float: left;
+  width: 320px;
+  margin-left: 100px;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+section .div8 .div8_2 p{
+  padding: 30px;
+  font-family: 'Montserrat';
+  font-size: 1em;
+}
+
+section .father{
+  width: 100%;
+  border-bottom: 1px solid #929393;
+  position: absolute;
+  top: 3200px;
+  height: 900px;
+}
+
+section .div9{
+  position: absolute;
+  height: 900px;
+  width: 1000px; 
+  left: 180px;
+}
+
+section .div9_1 {
+  margin: 0 auto;
+  text-align: left;
+}
+
+section .div9 .div9_1 .div9_11{
+  float: right;
+  width: 300px;
+}
+
+section .div9  p{
+  margin-top: 40px;
+  color: #929393;
+  line-height: 1.5em;
+}
+
+section .div9 .div9_2{
+  margin-top: 110px;
+}
+
+section .div9  .div9_2 .div9_22{
+  float: left;
+  width: 300px;
+}
+
+section .div9 .div9_2 img{
+  float: right;
+}
+
+section .div10{
+  width: 100%;
+  border-bottom: 1px solid #929393;
+  position: absolute;
+  top: 4100px;
+  height: 1200px;
+}
+
+section .div10 .div10_1{
+  width: 1000px;
+  position: absolute;
+  text-align: center;
+  left: 180px;
+}
+
+section .div10 .div10_1 h1{
+  font-family: 'Montserrat';
+  font-size: 3em;
+  padding: 50px;
+}
+
+section .div10 .div10_1 p{
+  font-family: 'Montserrat';
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+section .div10 .div10_2{
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 340px;
+  overflow: hidden;
+  justify-content: space-around;
+  padding: 300px 180px 0px 180px;
+}
+
+section .div10 .div10_2 li .hover{
+  display: block;
+}
+
+section .div10 .div10_2 .shadow {
+  margin-top: 35px;
+  height: 60px;
+  width: 270px;
+  margin:0 auto 0 auto;
+}
+
+section .div10 .div10_2 .shadow .hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(20,20,20,0.7);
+  display: none;
+}
+
+
+section .div10 .div10_2 li{
+  float: left;
+  margin-bottom: 20px;
+  width: 460px;
+  height: 340px;
+  overflow: hidden;
+}
+
+section .div10 .hover h4{
+  font-size: 20px;
+  color: #ffffff;
+}
+
+section .div10 .div10_2 .hover p{
+  font-size: 12px;
+  color:purple;
+  width: 400px;
+  margin-top: 20px;
+}
+
+section .div11 {
+  width: 100%;
+  border-bottom: 1px solid #929393;
+  position: absolute;
+  top: 5400px;
+  height: 620px;
+}
+
+section .div11 .div11_1{
+  border: 1px solid gray;
+  border-radius: 4px;
+  position: absolute;
+  left: 120px;
+  width: 500px;
+  height: 500px;
+}
+
+section .div11 .div11_1 h1{
+  font-family: 'Montserrat';
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+section .div11 .div11_1 input{
+  border-width: 1px;
+  border-color: grey;
+  border-style: solid;
+  border-radius: 2px;
+  width: 400px;
+  line-height: 48px;
+  background-color: transparent;
+  color: grey;
+  margin: 30px 60px 10px 40px;
+  vertical-align:middle;
+}
+
+section .div11 input:nth-of-type(3){
+ line-height: 80px;
+ text-align: top;
+ float: top;
+}
+
+section .div11 button{
+  background-color: black;
+  width: 400px;
+  line-height: 48px;
+  color: #ffffff;
+  margin: 30 60 10 40;
+}
+
+section .div11 .div11_3 h1{
+  font-family: 'Montserrat';
+  font-size: 2.5em;
+  position: absolute;
+  left:600px;
+  top:0px;
+}
+
+section .div11 .div11_3 h2{
+  font-family: 'Montserrat';
+  position: absolute;
+  left: 600px;
+  font-size: 1em;
+  width: 400px;
+  top: 100px;
+  line-height: 26px;
+}
+
+section .div11 .div11_4{
+  position: absolute;
+  left:720px;
+  width: 300px;
+  height: 300px;
+  top: 230px;
+  
+}
+
+section .div11 .div11_4 img{
+  left: 20px;
+  top: 20px;
+  margin-right: 15px;
+}
+
+section .div11 .div11_4 li{
+  line-height: 25px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  text-align: left;
+  text-align: -webkit-match-parent;
+}
+
+section .div12 {
+
+  width: 92.6%;
+  border-bottom: 1px solid #929393;
+  position: absolute;
+  top: 6020px;
+  height: 300px;
+  background-color: black;
+  color: grey;
+  display : inline-flex;
+  line-height: 40px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+
+section .div12  ul{
+  overflow: hidden;
+  font-size: 15px;
+}
+
+section .div12 h3{
+  color: aliceblue;
+  font-size: 18px;
+}
+
+section .div12 .learn{ 
+  width: 25%;
+}
+
+section .div12 .enjoy{
+  width: 25%;
+  width: 300px;
+}
+
+section .div12 .enjoy img{
+  padding-right: 10px;
+}
+
+section .div12 .about{
+  width: 25%;
+}
+
+section .div12 .support{
+  width: 25%;
+}
+
+
