@@ -1,0 +1,80 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" contest="text/html;charset=utf-8">
+        <title>test1</title>
+        <script type="text/javascript" charset="utf-8">
+           
+
+            var c = NaN;
+            var d = new Date();
+            //alert(typeof c);
+            alert(typeof d);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>
+    <h1>Demo</h1>
+    <p id="content-wrapper">你是谁</p>
+    <input id = "name-input" type="text" placeholder="输入你的名字">
+    <button id = "send-btn">发送</button>
+    <script>
+        document.getElementById("send-btn").onclick = function () {
+            document.getElementById("content-wrapper").innerHTML = 'hello '  + document.getElementById('name-input').value;
+          }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果</p>
+    <script>
+        var addBtn = document.getElementById("add-btn");
+        var minusBtn = document.getElementById("minus-btn");
+        var timesBtn = document.getElementById("times-btn");
+        var divideBtn = document.getElementById("divide-btn");
+
+        var firstNum = document.getElementById("first-number");
+        var secondNum = document.getElementById("second-number");
+        var p = document.getElementById("result");
+        //var p = document.getElementById("result");
+        
+        addBtn.onclick = function () {
+            p.innerHTML = "运算结果 = " + Number(Number(firstNum.value) + Number(secondNum.value));
+        }
+        minusBtn.onclick = function () {
+            p.innerHTML = "运算结果 = " + Number(Number(firstNum.value) - Number(secondNum.value));
+        }
+        timesBtn.onclick = function () {
+            p.innerHTML = "运算结果 = " + Number(Number(firstNum.value) * Number(secondNum.value));
+        }
+        divideBtn.onclick = function () {
+            p.innerHTML = "运算结果 = " + Number(Number(firstNum.value) / Number(secondNum.value));
+        }
+
+          
+    </script>
+</body>
+</html>
