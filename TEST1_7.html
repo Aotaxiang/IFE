@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" contest="text/html;charset=utf-8">
+        <title>
+            TEST
+        </title>
+        <script type="text/javascript" charset="utf-8">
+            // var arr1 = [1,2,9,2];
+            // var arr2 = [3,4,5,6,7,9,0];
+            /* 
+                数组内 按数字大小排序
+            */
+            // function compare1(value1,value2) { 
+            //     if(value1 < value2){
+            //         return -1;
+            //     }else if(value1 > value2){
+            //         return 1;
+            //     }else{
+            //         return 0;
+            //     }
+            //   }
+            // arr2.sort(compare1);
+            // console.log(arr2);
+
+
+            //indexOf:一个值的时候，返回的值是索引的位置 两个值的时候，第一个参数表示起始位置，第二个还是值
+            // var index = arr1.indexOf(3);
+            // alert(index);
+            
+            //every 数组中每一个元素进行一个函数的运算，都满足就返回true ，一个不满足就返回false
+
+            /* var result = arr1.every(function (item,index,array) {
+                return item > -1;
+              })
+
+              alert(result); */
+
+              //reduce  prev 前一个值 cur当前值 index索引位置 array 
+              /* var result = arr1.reduce(function (prev , cur ,index , array) {
+                  return  prev + cur;
+                })
+                alert(result); */
+
+
+                //创建对象 及属性
+                /* var obj = {};
+                obj.name = 'zhang';
+                obj.age = 20;
+                obj["bitrthday"] = '1111';
+                obj.say = function () {
+                    alert("hello")
+                  } */
+
+/*                   function Map() { 
+                      var obj = {};
+                      this.put = function(key,value){
+                        obj[key] = value;
+                      }
+
+                      this.size = function(){
+                          var count = 0;
+                          for(var attr in obj){
+                            count++;
+                          }
+                          return count;
+                      }
+
+                      this.get = function(key){
+                          if(obj[key]){
+                              return obj[key];
+                          }else{
+                              return null;
+                          }
+                      }
+                   }
+                  var m = new Map();
+                   m.put('01','abc');
+                   m.put('00','ad');
+                   m.put('03',456);
+                  
+                   //alert(m.size());
+
+                   alert(m.get('00')); */
+
+
+                   //去除数组中的重复项
+                   var arr = [2,1,4,2,4,5,0,0,3,4,8,7,10,220,4,330,440,550];
+                   //1 把数字转成一个js对象
+                   //2 把数组中的值 变成js对象中单key
+                   //3 把这个对象 再转成数组
+
+
+                   //1
+                   var toObject = function(arr){
+                    var obj = [];
+                    var j;
+                    for(var i = 0,j = arr.length ; i < j;i++){
+                        obj[arr[i]] = true ;
+                    }
+                    return obj;
+                   }
+                   //2
+                   function keys(obj) {
+                        var arr = [];//私有对象
+                        for(var attr in obj){
+                            if(obj.hasOwnProperty(attr)){
+                                arr.push(attr);
+                            }
+                        }
+                        return arr;
+                    }
+                    //综合方法 去掉数组中的重复项
+                    function uniq(nevarr){
+                        return keys(toObject(nevarr));
+                    }
+
+                    alert(uniq(arr));
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
