@@ -15,7 +15,7 @@
         var btn1 = document.getElementById("trans-btn");
         var result1 = document.getElementById("result");
         var inbtn = document.getElementById("dec-number");
-        var n = parseInt(inbtn.value);
+        
 
         function dec2bin(n) {
             var a = n;
@@ -46,12 +46,11 @@
         }
 
         function trans2(){
-            result1.innerHTML = dec2bin(parseInt(inbtn.value));
+            var numb1 = parseInt(inbtn.value);
+            result1.innerHTML = dec2bin(numb1);
         }
         
         
-        //console.log(dec2bin(n));
-
         
 // 实现点击转化按钮时，将输入的十进制数字转化为二进制，并显示在result的p标签内
 // Some coding
